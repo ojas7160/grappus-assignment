@@ -1,0 +1,38 @@
+.mt-20{
+  margin-top: 20px;
+}
+.card-design{
+  background-color: #090909;
+  color: white;
+}
+
+/* .nav-tabs{
+  border-bottom: 1px solid #dee2e6 !important;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: non
+}
+
+.nav-item{
+  background-color: transparent !important;
+}
+
+.nav-link{
+  background-color: transparent !important;
+} */
+
+.badge-design{
+  padding: 8px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.mb-5{
+  margin-bottom: 5px;
+}
+
+.d-flex{
+  display: flex;
+}

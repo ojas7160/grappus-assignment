@@ -1,0 +1,57 @@
+.bg-dark{
+  background-color: #090909 !important;
+}
+
+.bg-black{
+  background-color: black;
+}
+
+.h-75{
+  height: 75px !important;
+}
+
+.select-box{
+  width: 12%;
+  height: calc(1.5em + .75rem + 2px);
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.header{
+  position: fixed;
+  /* margin-bottom: 82px; */
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+
+.position-center{
+  position: relative;
+}
+
+.search{
+  background-color: black;
+  border-radius: 0px;
+  width: 400px;
+  border: none;
+}
+
+.search-icon{
+  z-index: 99;
+  margin-right: -32px;
+}
+
+.invisible-inputs{
+	background: transparent;
+	border: none;
+  padding: 10px 15px;
+}
+
+.pl-43{
+  padding-left: 43px;
+}
+
+.invisible-inputs:hover, .invisible-inputs:focus{
+  background: rgba(0,0,0,0.05);
+}

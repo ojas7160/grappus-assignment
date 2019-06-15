@@ -1,0 +1,16 @@
+.full-height{
+  height: 100vh;
+}
+
+.bg-black{
+  background-color: black;
+}
+
+.right-position{
+  position: fixed;
+  right: 0;
+}
+
+.mt-75{
+  margin-top: 75px;
+}
