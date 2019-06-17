@@ -2,8 +2,20 @@
   margin-top: 20px;
 }
 
+.mt-10{
+  margin-top: 10px !important;
+}
+
+.line-height-20{
+  line-height: 20px;
+}
+
 .ml-10{
   margin-left: 10px;
+}
+
+.ml-20{
+  margin-left: 20px !important;
 }
 
 .w-90{
@@ -39,6 +51,19 @@
   font-weight: 900;
 }
 
+.font-style{
+  font-weight: 300;
+  font-size: 18px;
+}
+
 .font-light{
-  font-weight: 100;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.border-design{
+  border: 1px solid #212429 !important;
+  border-radius: 2px !important;
+  padding: 5px;
+  padding-left: 10px;
 }

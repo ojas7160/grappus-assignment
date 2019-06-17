@@ -2,87 +2,444 @@
   <div class="col-md-12">
     <div class="card mt-20 card-design">
       <div class="card-body">
-        <div>
-        This is some text within a card body.
+        <div class="text-white">
+          <!-- This is some text within a card body. <br> -->
+          <div class="font-18"> Choose from our smart filters</div>
+          <p class="font-12 secondary-font-color mb-0">Lorem ipsum dolor sit amet, consectetur</p>
         </div>
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Submenu 1-1</a></li>
-              <li><a href="#">Submenu 1-2</a></li>
-              <li><a href="#">Submenu 1-3</a></li> 
-            </ul>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Company</a>
           </li>
-          <li><a href="#">Menu 2</a></li>
-          <li><a href="#">Menu 3</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Investor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Person</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sector</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Industry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sub-industry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Region</a>
+          </li>
         </ul>
+        <carousel [noWrap]="false">
+          <slide class="">
+              <div class="mt-20">
+                  <span class="badge badge-design badge-pill tab-design color-pink">Profile</span>
+                  <span class="badge badge-design badge-pill tab-design color-yellow">Comparables</span>
+                  <span class="badge badge-design badge-pill tab-design color-green">Strategic gaps</span>
+                  <span class="badge badge-design badge-pill tab-design color-red">Potential acquires</span>
+                  <span class="badge badge-design badge-pill tab-design color-blue">Fast path</span>
+                </div>
+            <div class="row mt-15">
+                <div class="col-md-6 mb-10">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">What are the most strategic gaps for a company across its portfolio ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-green">Strategic gaps</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-10">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">What are the most strategic gaps for a company for a company based on benchmarking vs closest competitors ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-green">Strategic gaps</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-10">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">Who can potentially acquire the company ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-red">Potential acquires</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-10">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">List of industry segments that a company operats in ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-pink">Profile</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">List of public comparables for a company ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-yellow">Comparables</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">what is the fast path to a company ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-blue">Fast path</span>
+                  </div>
+                </div>
+            </div>
+          </slide>
+          <slide class="">
+              <div class="mt-20">
+                  <span class="badge badge-design badge-pill tab-design color-pink">Profile</span>
+                  <span class="badge badge-design badge-pill tab-design color-yellow">Comparables</span>
+                  <span class="badge badge-design badge-pill tab-design color-green">Strategic gaps</span>
+                  <span class="badge badge-design badge-pill tab-design color-red">Potential acquires</span>
+                  <span class="badge badge-design badge-pill tab-design color-blue">Fast path</span>
+                </div>
+            <div class="row mt-15">
+                <div class="col-md-6 mb-10">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">What are the most strategic gaps for a company across its portfolio ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-green">Strategic gaps</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-10">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">What are the most strategic gaps for a company for a company based on benchmarking vs closest competitors ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-green">Strategic gaps</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-10">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">Who can potentially acquire the company ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-red">Potential acquires</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-10">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">List of industry segments that a company operats in ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-pink">Profile</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">List of public comparables for a company ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-yellow">Comparables</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">what is the fast path to a company ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-blue">Fast path</span>
+                  </div>
+                </div>
+            </div>
+          </slide>
+          <slide class="">
+              <div class="mt-20">
+                  <span class="badge badge-design badge-pill tab-design color-pink">Profile</span>
+                  <span class="badge badge-design badge-pill tab-design color-yellow">Comparables</span>
+                  <span class="badge badge-design badge-pill tab-design color-green">Strategic gaps</span>
+                  <span class="badge badge-design badge-pill tab-design color-red">Potential acquires</span>
+                  <span class="badge badge-design badge-pill tab-design color-blue">Fast path</span>
+                </div>
+            <div class="row mt-15">
+                <div class="col-md-6 mb-10">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">What are the most strategic gaps for a company across its portfolio ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-green">Strategic gaps</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-10">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">What are the most strategic gaps for a company for a company based on benchmarking vs closest competitors ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-green">Strategic gaps</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-10">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">Who can potentially acquire the company ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-red">Potential acquires</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-10">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">List of industry segments that a company operats in ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-pink">Profile</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">List of public comparables for a company ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-yellow">Comparables</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="border-white p-10">
+                    <p class="text-color font-12 mr-10 display-inline">what is the fast path to a company ?</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-blue">Fast path</span>
+                  </div>
+                </div>
+            </div>
+          </slide>
+        </carousel>
+          
+        <!-- <div class="mt-20">
+          <span class="badge badge-design badge-pill tab-design color-pink">Profile</span>
+          <span class="badge badge-design badge-pill tab-design color-yellow">Comparables</span>
+          <span class="badge badge-design badge-pill tab-design color-green">Strategic gaps</span>
+          <span class="badge badge-design badge-pill tab-design color-red">Potential acquires</span>
+          <span class="badge badge-design badge-pill tab-design color-blue">Fast path</span>
+        </div> -->
+        <!-- <div class="row mt-15">
+          <div class="col-md-6 mb-10">
+            <div class="border-white p-10">
+              <p class="text-color font-12 mr-10 display-inline">What are the most strategic gaps for a company across its portfolio ?</p>
+              <span class="badge badge-design badge-pill tab-design color-green">Strategic gaps</span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-10">
+            <div class="border-white p-10">
+              <p class="text-color font-12 mr-10 display-inline">What are the most strategic gaps for a company for a company based on benchmarking vs closest competitors ?</p>
+              <span class="badge badge-design badge-pill tab-design color-green">Strategic gaps</span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-10">
+            <div class="border-white p-10">
+              <p class="text-color font-12 mr-10 display-inline">Who can potentially acquire the company ?</p>
+              <span class="badge badge-design badge-pill tab-design color-red">Potential acquires</span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-10">
+            <div class="border-white p-10">
+              <p class="text-color font-12 mr-10 display-inline">List of industry segments that a company operats in ?</p>
+              <span class="badge badge-design badge-pill tab-design color-pink">Profile</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="border-white p-10">
+              <p class="text-color font-12 mr-10 display-inline">List of public comparables for a company ?</p>
+              <span class="badge badge-design badge-pill tab-design color-yellow">Comparables</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="border-white p-10">
+              <p class="text-color font-12 mr-10 display-inline">what is the fast path to a company ?</p>
+              <span class="badge badge-design badge-pill tab-design color-blue">Fast path</span>
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-5">
-        dhsfjgjhgdsjf
+    <div class="row mt-20">
+      <div class="col-md-6">
+        <div class="border-white p-25" style="height: 204px;">
+          <div class="row">
+            <div class="col-md-6">
+                <img width="90%" class="" height="" src="../../assets/arrow-graph-growth-21.png">
+                <p class="para">Run select use cases for</p>
+            </div>
+            <div class="col-md-6">
+              <a href="" class="li-design w-100 mr-0">Buy side PE</a>
+              <a class="li-design w-100 mr-0">Buy side Corporate</a>
+              <a class="li-design w-100 mr-0">Sell side</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-offset-md-2 col-md-5">
-        jdsjhgfdshjgsdjhg
+      <div class="col-md-6">
+        <div class="border-white p-25">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="height-image">
+                <img width="100%" class="" height="" src="../../assets/01-4.png">
+              </div>
+              <p class="para" style="bottom: -21px;">Top<br>charts</p>
+            </div>
+            <div class="col-md-8">
+                <a class="li-design">Acquirers</a>
+                <a class="li-design">Founders</a>
+                <a class="li-design">Institutional Investors</a>
+                <a class="li-design">Boardmembers</a>
+                <a class="li-design">Investment partners</a>
+                <a class="li-design">Corporate VCs</a>
+                <a class="li-design">Smart money investors</a>
+                <a class="li-design">Private equity</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="card card-design mt-20">
-      <div class="card-body" style="display: inline-block;">
-        <div>
-          Discover the population sectors we track
-          <p class="font-light">Lorem ipsum dolor sit amet,</p>
+      <div class="card-body">
+        <div class="text-white">
+            <!-- This is some text within a card body. <br> -->
+            <div class="font-18"> Discover the population sectors we track</div>
+            <p class="font-12 secondary-font-color mb-0">Lorem ipsum dolor sit amet, consectetur</p>
+          </div>
+        <div class="mt-20">
+          <span class="badge badge-design badge-pill color-dark">Enterprise infrastructure</span>
+          <span class="badge badge-design badge-pill color-dark">Enterprise software</span>
+          <span class="badge badge-design badge-pill color-dark">AI &amp; analytics</span>
+          <span class="badge badge-design badge-pill color-dark">Internet of Things</span>
+          <span class="badge badge-design badge-pill color-dark">FinTech</span>
+          <span class="badge badge-design badge-pill color-dark">Industrial tech</span>
+          <span class="badge badge-design badge-pill color-dark">Rail &amp; E-commerce tech</span>
+          <span class="badge badge-design badge-pill color-dark">Travel and hospitality</span>
+          <span class="badge badge-design badge-pill color-dark">Other verticals</span>
         </div>
-        <div>
-          <span class="badge badge-design badge-pill badge-dark">Enterprise infrastructure</span>
-          <span class="badge badge-design badge-pill badge-dark">Enterprise software</span>
-          <span class="badge badge-design badge-pill badge-dark">AI & analytics</span>
-          <span class="badge badge-design badge-pill badge-dark">Internet of Things</span>
-          <span class="badge badge-design badge-pill badge-dark">FinTech</span>
-          <span class="badge badge-design badge-pill badge-dark">Industrial tech</span>
-          <span class="badge badge-design badge-pill badge-dark">Rail & E-commerce tech</span>
-          <span class="badge badge-design badge-pill badge-dark">Travel and hospitality</span>
-          <span class="badge badge-design badge-pill badge-dark">Other verticals</span>
-        </div>
-        <div class="row">
-          <div class="col-md-6" style="border: white 1px solid">
-            <span>Enterprise infrastructure</span>
-            <span>View Industries</span>
-          </div>
-          <div class="col-md-6" style="border: white 1px solid">
-              <span>Enterprise software</span>
-              <span>View Industries</span>
-          </div>
-          <div class="col-md-6" style="border: white 1px solid">
-              <span>AI & analytics</span>
-              <span>View Industries</span>
-          </div>
-          <div class="col-md-6" style="border: white 1px solid">
-              <span>Internet of Things</span>
-              <span>View Industries</span>
-          </div>
-          <div class="col-md-6" style="border: white 1px solid">
-              <span>FinTech</span>
-              <span>View Industries</span>
-          </div>
-          <div class="col-md-6" style="border: white 1px solid;">
-              <span>Industrial tech</span>
-              <span>View Industries</span>
-          </div>
-          <div class="col-md-6" style="border: white 1px solid">
-              <span>Rail & E-commerce tech</span>
-              <span>View Industries</span>
-          </div>
-          <div class="col-md-6" style="border: white 1px solid">
-              <span>Travel and hospitality</span>
-              <span>View Industries</span>
-          </div>
-          <div class="col-md-6" style="border: white 1px solid">
-              <span>Other verticals</span>
-              <span>View Industries</span>
-          </div>
+        <div class="row mt-15">
+          <div class="col-md-6">
+            <div class="border-design mt-15">
+              <div class="d-flex">
+                <i class="fa icon-color fa-building mr-10 mt-5"></i>
+                <div class="space-between">
+                  <span class="font-design">Enterprise Infrastructure</span>
+                  <span class="sec-font-design">VIEW INDUSTRIES</span>
+                </div>
+              </div>
+              <div class="mt-15">
+                <a class="bottom-anchor-design" href="">Enterprise Networking</a>
+                <a class="bottom-anchor-design" href="">Enterprise Servers &amp; Systems</a>
+                <a class="bottom-anchor-design" href="">Enterprise Storage</a>
+                <a class="bottom-anchor-design" href="">Application development &amp; Integration</a>
+                <a class="bottom-anchor-design" href="">Cyber security</a>
+                <a class="bottom-anchor-design" href="">Enterprise IT Operations Management</a>
+              </div>
+            </div>
+            <div class="border-design mt-15">
+                <div class="d-flex">
+                  <i class="fa icon-color fa-stopwatch mr-10 mt-5"></i>
+                  <div class="space-between">
+                    <span class="font-design">AI &amp; Analytics</span>
+                    <span class="sec-font-design">VIEW INDUSTRIES</span>
+                  </div>
+                </div>
+                <div class="mt-15">
+                    <a class="bottom-anchor-design" href="">Artificial Intelligence</a>
+                    <a class="bottom-anchor-design" href="">Data Management &amp; Analytics</a>
+                  </div>
+              </div>
+              <div class="border-design mt-15">
+                  <div class="d-flex">
+                    <i class="fa icon-color fa-wrench mr-10 mt-5"></i>
+                    <div class="space-between">
+                      <span class="font-design">Industrial Tech</span>
+                      <span class="sec-font-design">VIEW INDUSTRIES</span>
+                    </div>
+                  </div>
+                  <div class="mt-15">
+                      <a class="bottom-anchor-design" href="">3D Printing</a>
+                      <a class="bottom-anchor-design" href="">Auto Tech</a>
+                      <a class="bottom-anchor-design" href="">Drones</a>
+                      <a class="bottom-anchor-design" href="">Management Tech</a>
+                      <a class="bottom-anchor-design" href="">Robotics</a>
+                      <a class="bottom-anchor-design" href="">Utilities Tech</a>
+                      <a class="bottom-anchor-design" href="">IoT - Industrial</a>
+                      <a class="bottom-anchor-design" href="">IoT - Auto</a>
+                      <a class="bottom-anchor-design" href="">IoT - Utilities</a>
+                    </div>
+                </div>
+                <div class="border-design mt-15">
+                    <div class="d-flex">
+                      <i class="fa icon-color fa-flag mr-10 mt-5"></i>
+                      <div class="space-between">
+                        <span class="font-design">Rail &amp; E-commerce Tech</span>
+                        <span class="sec-font-design">VIEW INDUSTRIES</span>
+                      </div>
+                    </div>
+                    <div class="mt-15">
+                        <a class="bottom-anchor-design" href="">Retail Tech</a>
+                        <a class="bottom-anchor-design" href="">E-commerce Tech</a>
+                      </div>
+                  </div>
+                  <div class="border-design mt-15">
+                      <div class="d-flex">
+                        <i class="fa icon-color fa-plane mr-10 mt-5"></i>
+                        <div class="space-between">
+                          <span class="font-design">Travel And Hospitality</span>
+                          <span class="sec-font-design">VIEW INDUSTRIES</span>
+                        </div>
+                      </div>
+                      <div class="mt-15">
+                          <a class="bottom-anchor-design" href="">Travel Tech</a>
+                          <a class="bottom-anchor-design" href="">Transport Tech</a>
+                          <a class="bottom-anchor-design" href="">Hospitality Tech</a>
+                        </div>
+                    </div>
+                  
+
+
+          </div> <!--end of left div-->
+          <div class="col-md-6">
+              <div class="border-design mt-15">
+                <div class="d-flex">
+                  <i class="fa icon-color fa-tv mr-10 mt-5"></i>
+                  <div class="space-between">
+                    <span class="font-design">Enterprise Software</span>
+                    <span class="sec-font-design">VIEW INDUSTRIES</span>
+                  </div>
+                </div>
+                <div class="mt-15">
+                    <a class="bottom-anchor-design" href="">AdTech</a>
+                    <a class="bottom-anchor-design" href="">AR/VR</a>
+                    <a class="bottom-anchor-design" href="">BlockChain</a>
+                    <a class="bottom-anchor-design" href="">Digital Marketing</a>
+                    <a class="bottom-anchor-design" href="">Enterprise Communication</a>
+                    <a class="bottom-anchor-design" href="">Financial Management Tech</a>
+                    <a class="bottom-anchor-design" href="">Human Capital Management Tech</a>
+                    <a class="bottom-anchor-design" href="">Sales &amp; CRM Software</a>
+                    <a class="bottom-anchor-design" href="">Supply Chain Management</a>
+                  </div>
+              </div>
+              <div class="border-design mt-15">
+                  <div class="d-flex">
+                    <i class="fa icon-color fa-globe mr-10 mt-5"></i>
+                    <div class="space-between">
+                      <span class="font-design">Internet of Things</span>
+                      <span class="sec-font-design">VIEW INDUSTRIES</span>
+                    </div>
+                  </div>
+                  <div class="mt-15">
+                      <a class="bottom-anchor-design" href="">IoT - Device &amp; Platforms</a>
+                      <a class="bottom-anchor-design" href="">IoT - Auto</a>
+                      <a class="bottom-anchor-design" href="">IoT - Commercial Buildings</a>
+                      <a class="bottom-anchor-design" href="">IoT - Customer</a>
+                      <a class="bottom-anchor-design" href="">IoT - Industrial</a>
+                      <a class="bottom-anchor-design" href="">IoT - Smart Cities</a>
+                      <a class="bottom-anchor-design" href="">IoT - Utilities</a>
+                    </div>
+                </div>
+                <div class="border-design mt-15">
+                    <div class="d-flex">
+                      <i class="fa icon-color fa-industry mr-10 mt-5"></i>
+                      <div class="space-between">
+                        <span class="font-design">FinTech</span>
+                        <span class="sec-font-design">VIEW INDUSTRIES</span>
+                      </div>
+                    </div>
+                    <div class="mt-15">
+                        <a class="bottom-anchor-design" href="">Alternative Lending &amp; Financing</a>
+                        <a class="bottom-anchor-design" href="">Banking Tech</a>
+                        <a class="bottom-anchor-design" href="">Capital Markets Tech</a>
+                        <a class="bottom-anchor-design" href="">Financial Data &amp; Analytics</a>
+                        <a class="bottom-anchor-design" href="">Insurance Tech - Auto</a>
+                        <a class="bottom-anchor-design" href="">Insurance Tech - Life &amp; Health</a>
+                        <a class="bottom-anchor-design" href="">Insurance Tech - Property &amp; Casuality</a>
+                        <a class="bottom-anchor-design" href="">Payment &amp; Transfer</a>
+                        <a class="bottom-anchor-design" href="">RegTech</a>
+                        <a class="bottom-anchor-design" href="">WealthTech</a>
+                      </div>
+                  </div>
+                  
+                    <div class="border-design mt-15">
+                        <div class="d-flex">
+                          <i class="fa icon-color fa-box-open mr-10 mt-5"></i>
+                          <div class="space-between">
+                            <span class="font-design">Other Verticals</span>
+                            <span class="sec-font-design">VIEW INDUSTRIES</span>
+                          </div>
+                        </div>
+                        <div class="mt-15">
+                            <a class="bottom-anchor-design" href="">Education Tech</a>
+                            <a class="bottom-anchor-design" href="">Legal Tech</a>
+                            <a class="bottom-anchor-design" href="">Ag Tech</a>
+                          </div>
+                      </div>
+
+
+          </div> <!--end of right-->
+          
         </div>
       </div>
     </div>

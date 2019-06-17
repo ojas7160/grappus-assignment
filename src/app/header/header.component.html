@@ -6,12 +6,17 @@
     <i class="fa fa-search search-icon"></i>
     <input class="form-control mr-sm-2 search pl-43 bg-black" type="search" placeholder="Search" aria-label="Search">
   </form>
-  <select class="select-box">
-    <option>
-      <img scr="https://sm.mashable.com/mashable_sea/photo/default/man-fakes-death-cat-q6u_2z9w.png">
-      Hello
-    </option>
-    <option>Hello</option>
-    <option>Hello</option>
-  </select>
+  <div class="btn-group" dropdown>
+    <button id="button-basic" dropdownToggle type="button" class="btn dropdown-toggle select-box" aria-controls="dropdown-basic">
+      Button dropdown <span class="caret"></span>
+    </button>
+    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+      <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+      <li class="divider dropdown-divider"></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+      </li>
+    </ul>
+  </div>
 </nav>
