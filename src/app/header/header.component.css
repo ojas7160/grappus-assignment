@@ -40,6 +40,7 @@
 .search-icon{
   z-index: 99;
   margin-right: -32px;
+  color: white;
 }
 
 .invisible-inputs{

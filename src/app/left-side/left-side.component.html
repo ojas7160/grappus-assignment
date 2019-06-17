@@ -8,72 +8,20 @@
           <p class="font-12 secondary-font-color mb-0">Lorem ipsum dolor sit amet, consectetur</p>
         </div>
         <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Company</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Investor</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Person</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sector</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Industry</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sub-industry</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Region</a>
+          <li class="nav-item" (click)="head.active = !head.active; toogleActive(head)" *ngFor="let head of navHeaders">
+            <a class="nav-link" [ngClass]="{'active' : head.active}" href="#">{{head.name}}</a>
           </li>
         </ul>
-        <carousel [noWrap]="false">
+        <carousel>
           <slide class="">
               <div class="mt-20">
-                  <span class="badge badge-design badge-pill tab-design color-pink">Profile</span>
-                  <span class="badge badge-design badge-pill tab-design color-yellow">Comparables</span>
-                  <span class="badge badge-design badge-pill tab-design color-green">Strategic gaps</span>
-                  <span class="badge badge-design badge-pill tab-design color-red">Potential acquires</span>
-                  <span class="badge badge-design badge-pill tab-design color-blue">Fast path</span>
+                  <span class="badge badge-design badge-pill tab-design {{tag.class}}" [ngClass]="{'activeTag' : tag.active}" (click)="toogleTag(tag)" *ngFor="let tag of tags">{{tag.name}}</span>
                 </div>
             <div class="row mt-15">
-                <div class="col-md-6 mb-10">
+                <div class="col-md-6 mb-10" [hidden]="data.show" *ngFor="let data of tagData">
                   <div class="border-white p-10">
-                    <p class="text-color font-12 mr-10 display-inline">What are the most strategic gaps for a company across its portfolio ?</p>
-                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-green">Strategic gaps</span>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-10">
-                  <div class="border-white p-10">
-                    <p class="text-color font-12 mr-10 display-inline">What are the most strategic gaps for a company for a company based on benchmarking vs closest competitors ?</p>
-                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-green">Strategic gaps</span>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-10">
-                  <div class="border-white p-10">
-                    <p class="text-color font-12 mr-10 display-inline">Who can potentially acquire the company ?</p>
-                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-red">Potential acquires</span>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-10">
-                  <div class="border-white p-10">
-                    <p class="text-color font-12 mr-10 display-inline">List of industry segments that a company operats in ?</p>
-                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-pink">Profile</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="border-white p-10">
-                    <p class="text-color font-12 mr-10 display-inline">List of public comparables for a company ?</p>
-                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-yellow">Comparables</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="border-white p-10">
-                    <p class="text-color font-12 mr-10 display-inline">what is the fast path to a company ?</p>
-                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 color-blue">Fast path</span>
+                    <p class="text-color font-12 mr-10 display-inline">{{data.title}}</p>
+                    <span class="badge badge-design badge-pill tab-design pt-4 pb-4 {{data.tag.class}}">{{data.tag.name}}</span>
                   </div>
                 </div>
             </div>
@@ -289,7 +237,7 @@
                 </div>
               </div>
               <div class="mt-15">
-                <a class="bottom-anchor-design" href="">Enterprise Networking</a>
+                <a class="bottom-anchor-design" href="" [ngClass]="{'active-anchor' : active}" (mouseenter) ="active = true"  (mouseleave) ="active = false;">Enterprise Networking</a>
                 <a class="bottom-anchor-design" href="">Enterprise Servers &amp; Systems</a>
                 <a class="bottom-anchor-design" href="">Enterprise Storage</a>
                 <a class="bottom-anchor-design" href="">Application development &amp; Integration</a>

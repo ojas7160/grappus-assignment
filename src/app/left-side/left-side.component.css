@@ -4,6 +4,7 @@
 .tab-design{
   font-size: 11px;
   padding: 10px 18px !important;
+  cursor: pointer;
 }
 .mt-15{
   margin-top: 15px !important;
@@ -16,6 +17,9 @@
 }
 .mt-5{
   margin-top: 5px !important;
+}
+.activeTag{
+  color: white !important;
 }
 .ml-10{
   margin-left: 10px;
@@ -208,4 +212,9 @@
   border-radius: 5px;
   margin-bottom: 7px;
   font-size: 12px;
+}
+
+.active-anchor{
+  color: white !important;
+  border: 1px solid white;
 }
