@@ -102,8 +102,8 @@
             <p class="font-12 secondary-font-color mb-0">Lorem ipsum dolor sit amet, consectetur</p>
           </div>
         <div class="mt-20">
-          <span class="badge badge-design badge-pill color-dark" (click)="toogleSector(sector)" *ngFor="let sector of sectorData1">{{sector.title}}</span>
-          <span class="badge badge-design badge-pill color-dark" (click)="toogleSector(sector)" *ngFor="let sector of sectorData2">{{sector.title}}</span>
+          <span class="badge badge-design badge-pill color-dark" [ngClass]="{'active-anchor' : !sector.active}" (click)="toogleSector(sector)" *ngFor="let sector of sectorData1">{{sector.title}}</span>
+          <span class="badge badge-design badge-pill color-dark" [ngClass]="{'active-anchor' : !sector.active}" (click)="toogleSector(sector)" *ngFor="let sector of sectorData2">{{sector.title}}</span>
         </div>
         <div class="row mt-15">
           <div class="col-md-6">

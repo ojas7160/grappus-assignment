@@ -15,4 +15,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 5. On the scroll, the header will be fixed too 
 6. smart filter at the bottom in discover sector section, just click on any tag and it will filter accordingly
 
+-> Steps to run
+
+1. clone this repo into your machine `git clone ${repo-ssh-link}`
+2. select the repo `cd grappus-assignment`
+3. `npm i` -> just to install all node modules
+4. `ng serve` to run the app on localhost:4200 port
+5. or if any other application is already running in 4200 port then `ng serve --port ${portNumber} --host=0.0.0.0`
+
 # grappus-assignment
