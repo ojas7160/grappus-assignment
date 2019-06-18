@@ -35,7 +35,7 @@ export class LeftSideComponent implements OnInit {
   ];
 
   sectorData1 = [
-    {active: false, icon: 'fa icon-color fa-building mr-10 mt-5', title: 'Enterprise infrastructure',
+    {show: false, active: false, icon: 'fa icon-color fa-building mr-10 mt-5', title: 'Enterprise infrastructure',
       sectorTags: [
         {name: 'Enterprise Networking'},
         {name: 'Enterprise Servers & Systems'},
@@ -45,7 +45,7 @@ export class LeftSideComponent implements OnInit {
         {name: 'Enterprise IT Operations Management'}
       ]
     },
-    {active: false, icon: 'fa icon-color fa-wrench mr-10 mt-5', title: 'Industrial Tech', sectorTags: [
+    {show: false, active: false, icon: 'fa icon-color fa-wrench mr-10 mt-5', title: 'Industrial Tech', sectorTags: [
       {name: '3D Printing'},
       {name: 'Auto Tech'},
       {name: 'Drones'},
@@ -56,15 +56,15 @@ export class LeftSideComponent implements OnInit {
       {name: 'IoT - Auto'},
       {name: 'IoT - Utilities'}
     ]},
-    {active: false, icon: 'fa icon-color fa-stopwatch mr-10 mt-5', title: 'AI & analytics', sectorTags: [
+    {show: false, active: false, icon: 'fa icon-color fa-stopwatch mr-10 mt-5', title: 'AI & analytics', sectorTags: [
       {name: 'Artificial Intelligence'},
       {name: 'Data Management & Analytics'}
     ]},
-    {active: false, icon: 'fa icon-color fa-flag mr-10 mt-5', title: 'Rail & E-commerce tech', sectorTags: [
+    {show: false, active: false, icon: 'fa icon-color fa-flag mr-10 mt-5', title: 'Rail & E-commerce tech', sectorTags: [
       {name: 'Retail Tech'},
       {name: 'E-commerce Tech'}
     ]},
-    {active: false, icon: 'fa icon-color fa-plane mr-10 mt-5', title: 'Travel and hospitality', sectorTags: [
+    {show: false, active: false, icon: 'fa icon-color fa-plane mr-10 mt-5', title: 'Travel and hospitality', sectorTags: [
       {name: 'Travel Tech'},
       {name: 'Transport Tech'},
       {name: 'Hospitality Tech'}
@@ -72,7 +72,7 @@ export class LeftSideComponent implements OnInit {
   ];
 
   sectorData2 = [
-    {active: false, icon: 'fa icon-color fa-tv mr-10 mt-5', title: 'Enterprise software', sectorTags: [
+    {show: false, active: false, icon: 'fa icon-color fa-tv mr-10 mt-5', title: 'Enterprise software', sectorTags: [
       {name: 'AdTech'},
       {name: 'AR/VR'},
       {name: 'BlockChain'},
@@ -82,7 +82,7 @@ export class LeftSideComponent implements OnInit {
       {name: 'Sales & CRM Software'},
       {name: 'Supply Chain Management'}
     ]},
-    {active: false, icon: 'fa icon-color fa-industry mr-10 mt-5', title: 'FinTech', sectorTags: [
+    {show: false, active: false, icon: 'fa icon-color fa-industry mr-10 mt-5', title: 'FinTech', sectorTags: [
       {name: 'Alternative Lending & Financing'},
       {name: 'Banking Tech'},
       {name: 'Capital Markets Tech'},
@@ -94,7 +94,7 @@ export class LeftSideComponent implements OnInit {
       {name: 'RegTech'},
       {name: 'WealthTech'}
     ]},
-    {active: false, icon: 'fa icon-color fa-globe mr-10 mt-5', title: 'Internet of Things', sectorTags: [
+    {show: false, active: false, icon: 'fa icon-color fa-globe mr-10 mt-5', title: 'Internet of Things', sectorTags: [
       {name: 'IoT - Device & Platforms'},
       {name: 'IoT - Auto'},
       {name: 'IoT - Commercial Buildings'},
@@ -103,7 +103,7 @@ export class LeftSideComponent implements OnInit {
       {name: 'IoT - Smart Cities'},
       {name: 'IoT - Utilities'}
     ]},
-    {active: false, icon: 'fa icon-color fa-box-open mr-10 mt-5', title: 'Other verticals', sectorTags: [
+    {show: false, active: false, icon: 'fa icon-color fa-box-open mr-10 mt-5', title: 'Other verticals', sectorTags: [
       {name: 'Education Tech'},
       {name: 'Legal Tech'},
       {name: 'Ag Tech'}
@@ -158,6 +158,7 @@ export class LeftSideComponent implements OnInit {
         return x.title === sector.title;
       });
     }
+    this.switchSector.show = true;
     this.switchSector.active = false;
     console.log(this.switchSector);
   }
@@ -196,7 +197,7 @@ export class LeftSideComponent implements OnInit {
 
   resetSector() {
     this.sectorData1 = [
-      {active: true, icon: 'fa icon-color fa-building mr-10 mt-5', title: 'Enterprise infrastructure',
+      {show: false, active: true, icon: 'fa icon-color fa-building mr-10 mt-5', title: 'Enterprise infrastructure',
         sectorTags: [
           {name: 'Enterprise Networking'},
           {name: 'Enterprise Servers & Systems'},
@@ -206,7 +207,7 @@ export class LeftSideComponent implements OnInit {
           {name: 'Enterprise IT Operations Management'}
         ]
       },
-      {active: true, icon: 'fa icon-color fa-wrench mr-10 mt-5', title: 'Industrial Tech', sectorTags: [
+      {show: false, active: true, icon: 'fa icon-color fa-wrench mr-10 mt-5', title: 'Industrial Tech', sectorTags: [
         {name: '3D Printing'},
         {name: 'Auto Tech'},
         {name: 'Drones'},
@@ -217,15 +218,15 @@ export class LeftSideComponent implements OnInit {
         {name: 'IoT - Auto'},
         {name: 'IoT - Utilities'}
       ]},
-      {active: true, icon: 'fa icon-color fa-stopwatch mr-10 mt-5', title: 'AI & analytics', sectorTags: [
+      {show: false, active: true, icon: 'fa icon-color fa-stopwatch mr-10 mt-5', title: 'AI & analytics', sectorTags: [
         {name: 'Artificial Intelligence'},
         {name: 'Data Management & Analytics'}
       ]},
-      {active: true, icon: 'fa icon-color fa-flag mr-10 mt-5', title: 'Rail & E-commerce tech', sectorTags: [
+      {show: false, active: true, icon: 'fa icon-color fa-flag mr-10 mt-5', title: 'Rail & E-commerce tech', sectorTags: [
         {name: 'Retail Tech'},
         {name: 'E-commerce Tech'}
       ]},
-      {active: true, icon: 'fa icon-color fa-plane mr-10 mt-5', title: 'Travel and hospitality', sectorTags: [
+      {show: false, active: true, icon: 'fa icon-color fa-plane mr-10 mt-5', title: 'Travel and hospitality', sectorTags: [
         {name: 'Travel Tech'},
         {name: 'Transport Tech'},
         {name: 'Hospitality Tech'}
@@ -233,7 +234,7 @@ export class LeftSideComponent implements OnInit {
     ];
   
     this.sectorData2 = [
-      {active: true, icon: 'fa icon-color fa-tv mr-10 mt-5', title: 'Enterprise software', sectorTags: [
+      {show: false, active: true, icon: 'fa icon-color fa-tv mr-10 mt-5', title: 'Enterprise software', sectorTags: [
         {name: 'AdTech'},
         {name: 'AR/VR'},
         {name: 'BlockChain'},
@@ -243,7 +244,7 @@ export class LeftSideComponent implements OnInit {
         {name: 'Sales & CRM Software'},
         {name: 'Supply Chain Management'}
       ]},
-      {active: true, icon: 'fa icon-color fa-industry mr-10 mt-5', title: 'FinTech', sectorTags: [
+      {show: false, active: true, icon: 'fa icon-color fa-industry mr-10 mt-5', title: 'FinTech', sectorTags: [
         {name: 'Alternative Lending & Financing'},
         {name: 'Banking Tech'},
         {name: 'Capital Markets Tech'},
@@ -255,7 +256,7 @@ export class LeftSideComponent implements OnInit {
         {name: 'RegTech'},
         {name: 'WealthTech'}
       ]},
-      {active: true, icon: 'fa icon-color fa-globe mr-10 mt-5', title: 'Internet of Things', sectorTags: [
+      {show: false, active: true, icon: 'fa icon-color fa-globe mr-10 mt-5', title: 'Internet of Things', sectorTags: [
         {name: 'IoT - Device & Platforms'},
         {name: 'IoT - Auto'},
         {name: 'IoT - Commercial Buildings'},
@@ -264,7 +265,7 @@ export class LeftSideComponent implements OnInit {
         {name: 'IoT - Smart Cities'},
         {name: 'IoT - Utilities'}
       ]},
-      {active: true, icon: 'fa icon-color fa-box-open mr-10 mt-5', title: 'Other verticals', sectorTags: [
+      {show: false, active: true, icon: 'fa icon-color fa-box-open mr-10 mt-5', title: 'Other verticals', sectorTags: [
         {name: 'Education Tech'},
         {name: 'Legal Tech'},
         {name: 'Ag Tech'}
