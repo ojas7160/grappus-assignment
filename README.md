@@ -6,23 +6,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+-> Cases covered (with static data)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. The choose from smart filters has tabs depending upon whichever is active the data  below will be shown
+2. The Tags (profile, comparables will work the same way) that is if one is selected only that data will be shown (and the pill will be shown as active) if none is selected all data will be shown
+3. Then as you can see  there are 4 dots which means you have to implement slider for that 
+4. The right bar will be fixed while scrolling the page
+5. On the scroll, the header will be fixed too 
+6. smart filter at the bottom in discover sector section, just click on any tag and it will filter accordingly
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 # grappus-assignment
