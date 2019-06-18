@@ -9,6 +9,8 @@
 .right-position{
   position: fixed;
   right: 0;
+  height: calc(100vh - 75px);
+  overflow-y: scroll;
 }
 
 .mt-75{
